@@ -60,7 +60,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     @IBAction func queue(sender: AnyObject) {
         var username = NSUserName();
-        Alamofire.request(.POST, "http://127.0.0.1:9393/queue", parameters: ["name": username])
+        Alamofire.request(.POST, "http://192.168.7.5:9393/queue", parameters: ["name": username])
             .response() { (_,_,JSON,_) in
                 println(JSON);
         }
