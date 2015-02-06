@@ -11,7 +11,27 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="John" customModuleProvider="target"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="John" customModuleProvider="target">
+            <connections>
+                <outlet property="menu" destination="ORm-fs-6nb" id="fQL-ef-sax"/>
+                <outlet property="queueMenuItem" destination="vwH-S7-qDK" id="Eoh-r9-ndZ"/>
+            </connections>
+        </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu id="ORm-fs-6nb">
+            <items>
+                <menuItem title="Queue" keyEquivalent="n" id="vwH-S7-qDK">
+                    <connections>
+                        <action selector="queue:" target="Voe-Tx-rLC" id="Axp-F4-n1r"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="P9F-OY-ec0"/>
+                <menuItem title="Quit" keyEquivalent="q" id="ZUe-g6-WOO">
+                    <connections>
+                        <action selector="terminate:" target="-3" id="uQA-ZR-yJi"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
     </objects>
 </document>
